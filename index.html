@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pomodoro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Cozy Focus</h1>
+
+<div class="timer-box">
+
+<h2 id="mode">Focus</h2>
+
+<div id="timer">25:00</div>
+
+<div class="buttons">
+<button onclick="startTimer()">Start</button>
+<button onclick="pauseTimer()">Pause</button>
+<button onclick="resetTimer()">Reset</button>
+</div>
+
+</div>
+
+<div class="settings">
+
+<label>Study Minutes</label>
+<input id="studyInput" type="number" value="25">
+
+<label>Break Minutes</label>
+<input id="breakInput" type="number" value="5">
+
+</div>
+
+<div class="sound">
+
+<h3>Ambient Sound</h3>
+
+<button onclick="playSound('rain.mp3')">Rain</button>
+<button onclick="stopSound()">Stop</button>
+
+</div>
+
+<div class="stats">
+Sessions completed: <span id="sessions">0</span>
+</div>
+
+<audio id="audio"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
